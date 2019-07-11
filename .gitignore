@@ -1,0 +1,15 @@
+
+# dependencies
+node_modules
+
+# editor
+.vscode
+
+# build
+/lib
+
+# environment
+.env
+
+# mac
+.DS_Store

@@ -1,0 +1,37 @@
+{
+  "name": "nest-scope",
+  "version": "0.0.1",
+  "description": "nest.js v5 scope",
+  "main": "main.js",
+  "scripts": {
+    "start": "ts-node src/main",
+    "compose": "docker-compose down && docker-compose up --build --force-recreate",
+    "build": "tsc",
+    "test": "npm run lint && jest",
+    "lint": "tslint -p tsconfig.json 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seunggu/scope-handler-example.git"
+  },
+  "keywords": [
+    "nestjs",
+    "scope",
+    "cls-hooked"
+  ],
+  "author": "seunggu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seunggu/scope-handler-example/issues"
+  },
+  "homepage": "https://github.com/seunggu/scope-handler-example#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.3"
+  }
+}
